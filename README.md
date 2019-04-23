@@ -8,7 +8,7 @@ OneDrive Directory Index
 
 ## 一键安装（Debian 8）：
 ```
-wget --no-check-certificate -qO- https://github.com/0oVicero0/oneindex/raw/master/install.sh |bash
+wget --no-check-certificate -qO- https://github.com/linxiwind/oneindex/raw/master/install.sh |bash
 ```
 ## 添加 Redis 支持（Debian 8）：
 ```
@@ -19,7 +19,7 @@ bash /etc/init.d/fcgiwrap-php restart
 # 后台选择 redis 模式, 并更新缓存.
 ```
 ## 预览地址
-[萌咖 存储仓库](https://moeclub.org/onedrive/)
+[我的仓库](https://one.torfirefox.name/)
 
 ## 创意整合
 1.极大简化安装步骤。           
@@ -74,7 +74,7 @@ bash /etc/init.d/fcgiwrap-php restart
 3、oneindex 程序   
 
 ## 安装：
-<img width="658" alt="image" src="https://raw.githubusercontent.com/0oVicero0/oneindex/files/images/install.gif">  
+<img width="658" alt="image" src="https://raw.githubusercontent.com/linxiwind/oneindex/files/images/install.gif">  
 
 
 ## 计划任务  
@@ -90,7 +90,7 @@ bash /etc/init.d/fcgiwrap-php restart
 ## 特殊文件实现功能  
 ` README.md `、`HEAD.md` 、 `.password`特殊文件使用  
 
-可以参考[https://github.com/0oVicero0/oneindex/tree/files](https://github.com/0oVicero0/oneindex/tree/files)  
+可以参考[https://github.com/linxiwind/oneindex/ree/files](https://github.com/linxiwind/oneindex/tree/files)  
 
 **在文件夹底部添加说明:**  
 >在onedrive的文件夹中添加` README.md `文件，使用markdown语法。  
@@ -123,3 +123,19 @@ php one.php token:refresh
 ```
 php one.php upload:file 本地文件 [onedrive文件]
 ```
+**例如：**  
+```
+//上传demo.zip 到OneDrive 根目录  
+php one.php upload:file demo.zip  
+
+//上传demo.zip 到OneDrive /test/目录  
+php one.php upload:file demo.zip /test/  
+
+//上传demo.zip 到OneDrive /test/目录并将其命名为 d.zip  
+php one.php upload:file demo.zip /test/d.zip  
+
+//上传up/ 到OneDrive /test/ 目录  
+php one.php upload:file up/ /test/  
+```
+
+
