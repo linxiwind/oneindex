@@ -61,6 +61,8 @@ class AdminController{
 			config('onedrive_hide', $_POST['onedrive_hide']);
 			config('onedrive_hotlink', $_POST['onedrive_hotlink']);
 			config('cache_expire_time', intval($_POST['cache_expire_time']));
+			config('cache_refresh_time', intval($_POST['cache_refresh_time']));
+			config('page_item', intval($_POST['page_item']));
 			$_POST['root_path'] = empty($_POST['root_path'])?'?':'';
 			config('root_path', $_POST['root_path']);
 		}

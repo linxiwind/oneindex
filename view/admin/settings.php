@@ -67,6 +67,11 @@
 		</div>
 
 		<div class="mdui-textfield">
+		  <h4>缓存刷新时间(秒)</h4>
+		  <input class="mdui-textfield-input" type="text" name="cache_refresh_time" value="<?php echo $config['cache_refresh_time'];?>"/>
+		</div>
+
+		<div class="mdui-textfield">
 		  <h4>去掉<code style="color: #c7254e;background-color: #f7f7f9;font-size:16px;">/?/</code> (需配合伪静态使用!!)</h4>
 		  <label class="mdui-textfield-label"></label>
 		  <label class="mdui-switch">
